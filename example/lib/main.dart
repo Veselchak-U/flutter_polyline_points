@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Polyline example',
+      title: 'Polyline  example',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -36,8 +36,10 @@ class MapScreen extends StatefulWidget {
 
 class _MapScreenState extends State<MapScreen> {
   GoogleMapController mapController;
-  double _originLatitude = 6.5212402, _originLongitude = 3.3679965;
-  double _destLatitude = 6.849660, _destLongitude = 3.648190;
+  // double _originLatitude = 6.5212402, _originLongitude = 3.3679965;
+  // double _destLatitude = 6.849660, _destLongitude = 3.648190;
+  double _originLatitude = 26.48424, _originLongitude = 50.04551;
+  double _destLatitude = 26.46423, _destLongitude = 50.06358;
   Map<MarkerId, Marker> markers = {};
   Map<PolylineId, Polyline> polylines = {};
   List<LatLng> polylineCoordinates = [];
